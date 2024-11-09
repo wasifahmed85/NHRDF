@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.5s;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* ------------------------home page------------------------ */
+.home_header_section {
+   background-color: #002147;
+}
+.home_benner_section .innar_benner img{
+    min-height: 280px;
+}
+.home_header_section .active{
+    color: #fdc800 !important; 
+}
+.home_header_section .navbar-nav a:hover {
+    color: #fdc800 !important; 
+}
+/* --------------------------------benner section----------------- */
+.home_benner_section .benner_items{
+    position: relative;
+}
+.home_benner_section .benner_text{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+}
+
+/* -------------------------course section------------------------ */
+.home_course_item_section .course_footer {
+    background-color:#f8f9fa;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    
+}
+.home_course_item_section .course_footer h4{
+    transition: 0.4s;
+}
+.home_course_item_section .course_footer h4:hover {
+    color: #fdc800;
+}
+.home_course_item_section .course_footer .course_icons{
+    border-top: #6c757d49 1px solid;
+    padding-top: 10px;
+}
+.home_course_item_section .course_footer .course_icons img{
+    border-radius: 50%;
+    
+    
+}
+.home_course_item_section .home_course_item:hover .course_image img{
+    transform: scale(1.1);
+}
+.home_course_item_section .course_footer .course_icons a{
+    color: #6c757d;
+    padding-right: 15px;
+}
+.home_course_item_section .course_footer .course_icons a:hover{
+    color: #fdc800;
+}
+.home_course_item_section .home_course_item {
+    position: relative;
+}
+.home_course_item_section .home_course_item .price{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  
+}
+.home_course_item_section .home_course_item .price button{
+    background-color: #ffe600e0;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: none;
+}
+.home_course_item_section .home_course_item .course_image{
+    position: relative;
+    overflow: hidden;
+    
+}
+.home_course_item_section .home_course_item .course_image img{
+    transition: all 0.6s;
+}
+.home_course_item_section .home_course_item .course_image:hover span{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #0021476e;
+    /* opacity: 0.5; */
+    z-index: 1;
+    animation: toRight 0.5s forwards;
+}
+
+@keyframes toRight {
+    0%{
+        width: 0;   
+    }
+    60%{width: 100%;}
+    85%{
+        width: 80%;
+    }
+    100%{   
+        width: 100%;
+    }
+}
+/* -----------------------------Feadback section---------------------- */
+
+.feadback_section .feadback_item{
+    background-color: #f8f8f8;
+    padding: 15px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.feadback_section .align-items-center i{
+    color: #fdc800;
+    font-size: 25px;
+}
+
+/* -------------------------------------gallary section-------------------- */
+.home_gallery_section .gallary_item{
+    position: relative;
+    overflow: hidden;
+}
+.home_gallery_section .gallary_item i{
+    border: 1px solid #fff;
+    background-color: #002147;
+    padding: 20px;
+    border-radius: 50%;
+}
+.home_gallery_section .gallary_item img{
+    transition: all 0.6s;
+}
+.home_gallery_section .gallary_item:hover img{
+    transform: scale(1.1);
+}
+.home_gallery_section .gallary_item .link{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffc10783;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.6s;
+}
+.home_gallery_section .gallary_item:hover .link{
+    opacity: 1;
+}
+
+/* ------------------------------------footer section-------------------- */
+.footer_section{
+    background-color: #002147;
+}
+.footer_section .footer_icons i{
+
+    border: 1px solid #3b3a3a7a;
+    padding:10px 15px;
+    margin-right: 10px;
+}
+.footer_section .footer_icons p{
+    line-height: 30px;
+    font-size: 14px;
+}
+.footer_section .footer_menu a{
+    padding-bottom: 15px;
+    font-size: 14px;
+}
+.footer_section .footer_contact a{
+    padding-bottom: 15px;
+    font-size: 14px;
+}
+.footer_section .footer_contact i{
+    padding-right: 10px;
+}
+.footer_socet_section{
+    background-color: #002147ef;
+}
+/* ---------------------------------------------home page end----------------------------------------- */
+/* -----------------------------------------About page ------------------------------ */
+
+/* -----------------------staff section-------------- */
+.about_staff_profile .staff_item{
+    position: relative;
+    overflow: hidden;
+}
+.about_staff_profile .staff_text h5{
+    color: #fdc800 !important;
+}
+
+.about_staff_profile .staff_text{
+    position: absolute;
+    padding: 88px 0px 0px 0px;
+    bottom: 0;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(232, 125, 170, 0) 55%, #473a00);
+}
+.about_staff_profile .staff_text i{
+    border: 1px solid #ffffffab;
+    padding: 10px 15px;
+    color: #fdc800;
+    margin-right:15px ;
+  
+}
+.about_staff_profile .inner_item{
+ transform: translateY(150px);
+ opacity: 0;
+}
+.about_staff_profile .staff_item:hover .inner_item{
+    transform: translateY(0px);
+    opacity: 1;
+   }
+.about_staff_profile .staff_text i:hover{
+    color: #fff !important;
+    background-color: #fdc800;
+}
+.about_staff_profile .staff_text{
+    bottom: -50%;
+}
+.about_staff_profile .staff_item:hover .staff_text{
+    bottom: 0;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(8, 0, 4, 0.61) 55%, #473a00);
+}
+/* --------------------------------------------about us--------------------------------- */
+.about_us_section  .about_text p{
+        font-size: 20px;
+        line-height: 26px;
+        font-weight: 400;
+        font-style: normal;
+}
+.about_us_section  .about_text h2{
+    color: #002147;
+    
+}
+.about_us_section .about_image{
+    position: relative;
+
+}
+.about_us_section .about_image span{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3333;
+    
+}
+.about_us_section .about_image:hover span{
+    /* transform-origin: right; */
+    animation: toRight 0.9s linear forwards;
+    background: #00214763;
+}
+
