@@ -1,0 +1,228 @@
+:root {
+    --primary-color: #D57315;
+    --secondary-color: #2A2A2A;
+    --third-color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: var(--third-color);
+}
+
+.section-properties {
+    padding: 3rem 0;
+}
+
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* BANNER SECTION */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+.banner-section {
+    position: relative;
+    align-items: center;
+}
+
+.banner-section .container {
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.banner-section h1 {
+    color: var(--third-color);
+    font-size: 70px;
+}
+
+.banner-section p {
+    color: var(--third-color);
+    font-size: 22px;
+}
+
+
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* HIGHLIGHTS SECTION */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+.highlights {
+    background: var(--primary-color);
+}
+
+.highlights .card img {
+    margin: 0 auto !important;
+}
+
+.highlights .col-lg-4 .card {
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 1rem 0;
+}
+
+.highlights .card:hover {
+    transition: all 0.4s ease-in-out;
+}
+
+.highlights .card:hover {
+    background: #d572153c;
+}
+
+
+
+
+
+/* FOOTER SECTION */
+footer {
+    color: black !important;
+}
+
+footer .row {
+    align-items: center;
+}
+
+footer .col-4:nth-child(1) ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .col-4:nth-child(1) li {
+    font-size: 40px;
+    list-style: none;
+}
+
+footer .col-4:nth-child(3) li {
+    font-size: 18px;
+    line-height: 36px;
+    list-style: none;
+    text-align: left;
+}
+
+footer .col-4:nth-child(3) li a {
+    text-decoration: none;
+    color: black;
+    margin: 0 1rem;
+}
+
+
+
+
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* FARMING GUIDE PAGE */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+.guides-section img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.guides-section .card {
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.guides-section .col-4 .col-8 {
+    position: relative;
+}
+
+.guides-section .col-4 .col-8 span {
+    position: absolute;
+    font-size: 30px;
+    color: var(--third-color);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.guides-section .col-4 .col-8 .overlay {
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.267);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* CONTACT PAGE */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+.contact-info-section .col-lg-4 .card {
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 35px;
+}
+
+.contact-info-section .col-lg-4 .card a {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+
+
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* CROP DETAILS SECTION */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+
+.crop-section {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+.crop-card {
+    margin-bottom: 30px;
+    transition: transform 0.2s;
+    border: 1px solid #d3d3d3;
+    border-radius: 10px;
+}
+
+.crop-card:hover {
+    transform: scale(1.03);
+}
+
+.crop-image {
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-title {
+    font-weight: bold;
+    color: #4a9e4a;
+}
+
+.section-title {
+    margin-top: 20px;
+    /* color: #3a5b3a; */
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
